@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+:root{
+    --background: black;
+}
+.logo{
+    font-size: 24px;
+    color: antiquewhite;
+}
+nav{
+    background: var(--background);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50px;
+    border-bottom: 1px solid white;
+}
+nav ul{
+    display: flex;
+}
+nav ul li a{
+    margin: 13px;
+}
+.container{
+    background: var(--background);
+    min-height: 100vh;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: calc(1000px - 200px);
+    position: relative;
+    top: 129px;
+}
+.main-image img{
+    height: 250px;
+    border-style:groove;
+    border-radius: 90px;
+    margin-bottom: 50px;
+
+}
+.text{
+    font-size: 40px;
+}
+.button{
+    animation: button 2s ease;
+    margin-top: 30px;
+  
+}
+button{
+    cursor: pointer;
+}
+.sub{
+    height: 40px;
+    width: 40%;
+    background: none;
+    border-color: white;
+    border-radius: 9px;
+    transition: .9s;
+}
+.sub:hover{
+    color: black;
+    background:  white;
+    border: none;
+}
+.mor{
+    height: 40px;
+    width: 40%;
+    border-radius: 9px;
+    color: black;
+    margin-left: 2px;
+    transition: .9s;
+}
+.mor:hover{
+    color: white;
+    background: none;
+    border: none;
+}
+@keyframes button {
+    0%{
+        transform: translateY(0px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(6px);
+    }
+}
+.row img{
+    margin-top: 200px;
+    margin-left: 100px;
+    height: 400px;
+    width: 250px;
+    
+}
